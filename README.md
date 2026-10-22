@@ -2,8 +2,9 @@
 
 The privacy policy for the INCCM App (Google Play: `rocks.uxi.inccm`), published with GitHub Pages.
 
-- `index.html` is the policy page. It is self-contained: system fonts only, no scripts, and no third-party requests.
-- `assets/` has the logo and icons.
+- `index.html` is the policy page.
+- `delete-account/index.html` explains how to delete an account (in the App, or by email without it) and what is deleted or kept. It is the **Delete account URL** Google Play asks for, and the policy's "Deleting your account" section links to it.
+- `assets/` has the shared stylesheet (`site.css`), the logo and icons. The pages use system fonts only, no scripts, and no third-party requests.
 - `.nojekyll` makes GitHub Pages serve the files as they are.
 
 ## Publishing
@@ -23,6 +24,10 @@ The privacy policy for the INCCM App (Google Play: `rocks.uxi.inccm`), published
 
 Use that URL in the Google Play Console (**Policy and programs → App content → Privacy policy**), App Store Connect, and the app's Settings → Privacy & Security.
 
+For the Play Console's **Data safety → Data deletion → Delete account URL**, use `https://<owner>.github.io/inc-cm-privacy-policy/delete-account/`.
+
 ## Updating
 
 Change the policy whenever the app starts collecting new information or using it differently (for example accounts, Parent Mode, analytics or push notifications). Update the effective date in two places in `index.html`: the header `<time>` and the footer.
+
+When the app's account deletion changes (where it is in the app, or what the server deletes), update `delete-account/index.html` and its date (header `<time>` and footer) too.
