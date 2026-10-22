@@ -458,7 +458,7 @@
           <p class="eyebrow">INCCM App</p>
           <h1>Privacy Policy</h1>
           <p class="meta">
-            Effective <time datetime="2026-10-10">October 10, 2026</time>
+            Effective <time datetime="2026-10-22">October 22, 2026</time>
           </p>
         </div>
       </header>
@@ -478,8 +478,8 @@
             >
               <path d="M4 10.5l4 4 8-9" />
             </svg>
-            You can explore the App without creating an account or giving us any
-            personal information.
+            An account is optional: you can explore the App as a guest, without
+            giving us any personal information.
           </li>
           <li>
             <svg
@@ -494,6 +494,7 @@
               <path d="M4 10.5l4 4 8-9" />
             </svg>
             We collect personal information only when you
+            <strong>create an account or sign in</strong>,
             <strong>book a museum visit</strong> or
             <strong>chat with Museum Support</strong>, and we use it only for
             those purposes.
@@ -592,9 +593,10 @@
         <section id="information-we-collect">
           <h2><span class="num">2</span>Information we collect</h2>
           <p>
-            You can browse the App's content without signing in or telling us
-            who you are. The App collects personal information only when you use
-            one of the two features that need it: <strong>Booking</strong> and
+            You can browse the App's content as a guest, without signing in or
+            telling us who you are. The App collects personal information only
+            when you use one of the features that need it:
+            <strong>Accounts</strong>, <strong>Booking</strong> and
             <strong>Chat</strong>.
           </p>
 
@@ -608,6 +610,63 @@
                 </tr>
               </thead>
               <tbody>
+                <tr>
+                  <td>
+                    First, middle and last name, suffix, birthday, gender, email
+                    address and a password
+                  </td>
+                  <td data-label="When it's collected">
+                    When you create an account. We email you a one-time code,
+                    which you enter in the App to confirm the email address.
+                  </td>
+                  <td data-label="Why">
+                    To create your account and confirm that the email address is
+                    yours
+                  </td>
+                </tr>
+                <tr>
+                  <td>Email address and password</td>
+                  <td data-label="When it's collected">When you sign in</td>
+                  <td data-label="Why">
+                    To check that the account is yours and keep you signed in
+                  </td>
+                </tr>
+                <tr>
+                  <td>Email address</td>
+                  <td data-label="When it's collected">
+                    When you reset a forgotten password. We email you a one-time
+                    code, which you enter in the App, and then a temporary
+                    password to sign in with.
+                  </td>
+                  <td data-label="Why">
+                    To check that the account is yours and let you sign in again
+                  </td>
+                </tr>
+                <tr>
+                  <td>Your current and new password</td>
+                  <td data-label="When it's collected">
+                    When you change your password in the App's Settings. We
+                    email you a one-time code, which you enter in the App to
+                    confirm the change; you are then signed out.
+                  </td>
+                  <td data-label="Why">
+                    To check that the account is yours and change its password
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    First, middle and last name, suffix, birthday, gender,
+                    whether you are an INC member, and your INC district
+                  </td>
+                  <td data-label="When it's collected">
+                    When you are signed in (the App loads your profile from our
+                    server) and when you change your profile in the App's Manage
+                    Profile
+                  </td>
+                  <td data-label="Why">
+                    To show your account's details and keep them up to date
+                  </td>
+                </tr>
                 <tr>
                   <td>First and last name, email address and mobile number</td>
                   <td data-label="When it's collected">
@@ -664,6 +723,13 @@
             </table>
           </div>
 
+          <h3>About your password</h3>
+          <p>
+            The App doesn't send your password as you typed it: it sends only a
+            scrambled (hashed) form of it to our servers, and it doesn't save
+            your password on your device.
+          </p>
+
           <h3>About the device identifier</h3>
           <p>
             For Chat, the App uses an identifier that your device's operating
@@ -673,9 +739,21 @@
             don't use it to track you across other apps or websites.
           </p>
 
+          <h3>About announcements</h3>
+          <p>
+            While the App is open, it stays connected to our servers so that
+            announcements from the museum, such as a change in opening hours,
+            appear right away. Like any connection, it carries your IP address
+            (see the table above), but it sends no other information about you,
+            and it closes when you leave the App. The App doesn't use push
+            notification services.
+          </p>
+
           <h3>What we don't collect</h3>
           <ul>
-            <li>We don't require an account, sign-in or password.</li>
+            <li>
+              We don't require an account: you can use the App as a guest.
+            </li>
             <li>
               We don't access your location, camera, microphone, photos, files
               or contacts.
@@ -695,6 +773,7 @@
           <h2><span class="num">3</span>How we use information</h2>
           <p>We use the information described above to:</p>
           <ul>
+            <li>create and manage your account, and sign you in;</li>
             <li>
               receive and manage your booking requests, give you your booking
               reference and QR code, and admit your group on the day of your
@@ -726,10 +805,22 @@
         <section id="on-your-device">
           <h2><span class="num">4</span>Information on your device</h2>
           <p>
-            The App doesn't save your name, email address, mobile number or
-            messages on your device. The details you enter in Chat are kept in
-            the App's memory so you don't have to type them again while the App
-            is open, and they are cleared when the App closes.
+            When you sign in, the App keeps your name, email address, birthday,
+            gender, whether you are an INC member, your INC district and a
+            sign-in token (so you stay signed in) in your device's secure
+            storage: the Keychain on iOS, or encrypted with the Android Keystore
+            on Android. If you continue as a guest, it remembers that choice the
+            same way. Signing out removes this information from your device. On
+            iOS, the system may keep it after you delete the App, until you
+            reinstall the App and sign out.
+          </p>
+          <p>
+            Apart from that, the App doesn't save your name, email address,
+            mobile number or messages on your device. The details you enter in
+            Chat are kept in the App's memory so you don't have to type them
+            again while the App is open (when you're signed in, they start with
+            your account's name, email address and INC membership), and they are
+            cleared when the App closes.
           </p>
           <p>
             After you book, the App shows your booking reference and QR code.
@@ -801,11 +892,12 @@
             and the App shows no advertising.
           </p>
           <p>
-            Booking and Chat ask for contact details and are meant for parents,
-            guardians and other adults. We don't knowingly collect personal
-            information directly from children. If you are under 18, please use
-            Booking or Chat only with the permission and supervision of a parent
-            or guardian, who is responsible for the information provided.
+            Accounts, Booking and Chat ask for personal details and are meant
+            for parents, guardians and other adults. We don't knowingly collect
+            personal information directly from children. If you are under 18,
+            please create an account or use Booking or Chat only with the
+            permission and supervision of a parent or guardian, who is
+            responsible for the information provided.
           </p>
           <p>
             If you are a parent or guardian and believe your child has given us
@@ -838,6 +930,10 @@
             purposes it was collected for:
           </p>
           <ul>
+            <li>
+              <strong>Account information</strong>, for as long as you keep your
+              account, unless you ask us to delete it sooner;
+            </li>
             <li>
               <strong>Booking information</strong>, for as long as needed to
               manage your booking and visit, and afterwards only as long as
@@ -883,15 +979,16 @@
               >info@incmuseum.com</a
             >
             from the email address you used in the App. To help us find your
-            information, include your booking reference number (for bookings) or
-            the name you used in Chat. We may need to confirm your identity
-            before acting on your request.
+            information, include your account's email address, your booking
+            reference number (for bookings) or the name you used in Chat. We may
+            need to confirm your identity before acting on your request,
+            including a request to delete your account.
           </p>
           <p>
             If you withdraw your consent or ask us to delete your booking
             details before your visit, we may not be able to keep your booking.
-            Uninstalling the App removes it from your device, but it doesn't
-            delete information you already sent us, so please contact us for
+            Signing out or uninstalling the App doesn't delete information you
+            already sent us, including your account, so please contact us for
             that.
           </p>
         </section>
@@ -937,7 +1034,7 @@
       </main>
 
       <footer>
-        <span>INCCM App Privacy Policy · Effective October 10, 2026</span>
+        <span>INCCM App Privacy Policy · Effective October 22, 2026</span>
         <a href="#top">Back to top</a>
       </footer>
     </div>
