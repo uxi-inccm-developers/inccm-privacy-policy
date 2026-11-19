@@ -4,6 +4,7 @@ The privacy policy for the INCCM App (Google Play: `rocks.uxi.inccm`), published
 
 - `index.html` is the policy page.
 - `delete-account/index.html` explains how to delete an account (in the App, or by email without it) and what is deleted or kept. It is the **Delete account URL** Google Play asks for, and the policy's "Deleting your account" section links to it.
+- `inccm-mis/index.html` is the privacy policy of **INCCM - Booking Scanner** (MIS), the museum staff's booking scanner app (Google Play: `rocks.uxi.inccm_mis`, App Store: `rocks.uxi.inccm-mis`). It covers the staff who sign in and the guests whose bookings the app shows.
 - `assets/` has the shared stylesheet (`site.css`), the logo and icons. The pages use system fonts only, no scripts, and no third-party requests.
 - `.nojekyll` makes GitHub Pages serve the files as they are.
 
@@ -26,8 +27,12 @@ Use that URL in the Google Play Console (**Policy and programs → App content �
 
 For the Play Console's **Data safety → Data deletion → Delete account URL**, use `https://<owner>.github.io/inc-cm-privacy-policy/delete-account/`.
 
+For **INCCM - Booking Scanner** (MIS), use `https://<owner>.github.io/inc-cm-privacy-policy/inccm-mis/` as its privacy policy URL in the Play Console and App Store Connect.
+
 ## Updating
 
 Change the policy whenever the app starts collecting new information or using it differently (for example accounts, Parent Mode, analytics or push notifications). Update the effective date in two places in `index.html`: the header `<time>` and the footer.
+
+When MIS starts collecting new information or using it differently (for example new permissions, analytics, or exporting bookings), update `inccm-mis/index.html` and its effective date (header `<time>` and footer).
 
 When the app's account deletion changes (where it is in the app, or what the server deletes), update `delete-account/index.html` and its date (header `<time>` and footer) too.
